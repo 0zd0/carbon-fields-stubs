@@ -1,54 +1,55 @@
 {
-  "name": "onepix/carbon-fields-stubs",
-  "description": "Stubs for the Carbon Fields plugin for static analysis",
-  "license": "MIT",
-  "keywords": [
-    "wordpress",
-    "carbon fields",
-    "static analysis",
-    "phpstan",
-    "psalm"
-  ],
-  "homepage": "https://github.com/0zd0/carbon-fields-stubs",
-  "require-dev": {
-    "php": "^8.1",
-    "phpdocumentor/reflection-docblock": "^5.6",
-    "phpunit/phpunit": "^9.6",
-    "phpstan/phpstan": "^1.10",
-    "friendsofphp/php-cs-fixer": "^3.65"
-  },
-  "minimum-stability": "stable",
-  "autoload-dev": {
-    "psr-4": {
-      "Onepix\\Stubs\\CarbonFields\\": "src/"
-    },
-    "classmap": [
-      "tests/"
-    ]
-  },
-  "config": {
-    "allow-plugins": {
-      "onepix/wordpress-stubs-generator": true
-    },
-    "platform": {
-      "php": "8.1.0"
-    }
-  },
-  "scripts": {
-    "cleanup": "git status --short --ignored | sed -n -e 's#^!! ##p' | xargs -r rm -vrf",
-    "test": [
-      "@cs",
-      "@test:phpunit",
-      "@test:phpstan"
+    "name": "onepix/carbon-fields-stubs",
+    "description": "Stubs for the Carbon Fields plugin for static analysis",
+    "license": "MIT",
+    "keywords": [
+        "wordpress",
+        "carbon fields",
+        "static analysis",
+        "phpstan",
+        "psalm"
     ],
-    "test:cs": "phpcs",
-    "test:cs:fix": "phpcbf",
-    "test:phpstan": "phpstan analyze",
-    "test:phpunit": "phpunit",
-    "generate": "bash ./generate.sh",
-    "generate-latest": "bash ./release-latest-versions.sh"
-  },
-  "scripts-descriptions": {
-    "cleanup": "Remove all ignored files."
-  }
+    "homepage": "https://github.com/0zd0/carbon-fields-stubs",
+    "require-dev": {
+        "php": "^8.1",
+        "phpdocumentor/reflection-docblock": "^5.6",
+        "phpunit/phpunit": "^9.6",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.65",
+        "onepix/wordpress-stubs-generator": "^1.1"
+    },
+    "minimum-stability": "stable",
+    "autoload-dev": {
+        "psr-4": {
+            "Onepix\\Stubs\\CarbonFields\\": "src/"
+        },
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "onepix/wordpress-stubs-generator": true
+        },
+        "platform": {
+            "php": "8.1.0"
+        }
+    },
+    "scripts": {
+        "cleanup": "git status --short --ignored | sed -n -e 's#^!! ##p' | xargs -r rm -vrf",
+        "test": [
+            "@cs",
+            "@test:phpunit",
+            "@test:phpstan"
+        ],
+        "test:cs": "phpcs",
+        "test:cs:fix": "phpcbf",
+        "test:phpstan": "phpstan analyze",
+        "test:phpunit": "phpunit",
+        "generate": "bash ./generate.sh",
+        "generate-latest": "bash ./release-latest-versions.sh"
+    },
+    "scripts-descriptions": {
+        "cleanup": "Remove all ignored files."
+    }
 }

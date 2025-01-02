@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
+#
+# Generate Carbon Fields stubs from all the latest versions.
+#
+
 set -e
 
 RELEASES=$(curl -s "https://api.github.com/repos/htmlburger/carbon-fields/releases")
 
 for V in 3.6 3.7; do
-    printf -v JQ_FILTER '.[].tag_name | select(test("^v?%s\\.\\d+$"))' "${V}"
+    printf -v JQ_FILTER '.[].tag_name | select(test("^v?%s[.][0-9]+$"))' "${V}"
     LATEST=$(echo "${RELEASES}" | jq -r "${JQ_FILTER}" | sort -t "." -k 2 -g | tail -n 1)
 
     if [ -z "$LATEST" ]; then
@@ -17,9 +21,6 @@ for V in 3.6 3.7; do
         echo "Tag exists!"
         continue
     fi
-
-    echo LATEST
-    exit
 
     git status --ignored --short -- source/ | sed -n -e 's#^!! ##p' | xargs --no-run-if-empty -- rm -rf
 

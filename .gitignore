@@ -4,3 +4,7 @@
 .idea
 
 .php-cs-fixer.cache
+
+source/carbon-fields/*
+!source/carbon-fields/.gitkeep
+source/*.zip

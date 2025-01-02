@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d24adb76a0645a9f5d1d5844d763e12d",
+    "content-hash": "ee950d986624493b8e0e41ce4e98242b",
     "packages": [],
     "packages-dev": [
         {
@@ -740,6 +740,64 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
             },
             "time": "2024-12-30T11:07:19+00:00"
+        },
+        {
+            "name": "onepix/wordpress-stubs-generator",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/0zd0/wordpress-stubs-generator.git",
+                "reference": "e86262343501c1cc6fc2aeaf9e56ae00d3c18ca7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/0zd0/wordpress-stubs-generator/zipball/e86262343501c1cc6fc2aeaf9e56ae00d3c18ca7",
+                "reference": "e86262343501c1cc6fc2aeaf9e56ae00d3c18ca7",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^5.3",
+                "php": "^8.1",
+                "symfony/console": "^6.4",
+                "symfony/filesystem": "^6.4",
+                "symfony/finder": "^6.4"
+            },
+            "replace": {
+                "php-stubs/generator": "*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.65",
+                "phpunit/phpunit": "^9.4"
+            },
+            "bin": [
+                "bin/generate-stubs"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "StubsGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Onepix",
+                    "email": "info@onepix.net"
+                }
+            ],
+            "description": "Generate stubs from any PHP code for IDE completion and static analysis.",
+            "homepage": "https://github.com/0zd0/wordpress-stubs-generator",
+            "keywords": [
+                "ide",
+                "static analysis"
+            ],
+            "support": {
+                "source": "https://github.com/0zd0/wordpress-stubs-generator/tree/v1.1.1"
+            },
+            "time": "2024-12-30T04:37:59+00:00"
         },
         {
             "name": "phar-io/manifest",
