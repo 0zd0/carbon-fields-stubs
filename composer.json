@@ -16,7 +16,8 @@
         "phpunit/phpunit": "^9.6",
         "phpstan/phpstan": "^1.10",
         "friendsofphp/php-cs-fixer": "^3.65",
-        "onepix/wordpress-stubs-generator": "^1.1"
+        "onepix/wordpress-stubs-generator": "^1.1",
+        "onepix/wordpress-hooks-stub-generator": "1.0.4"
     },
     "minimum-stability": "stable",
     "autoload-dev": {
