@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()
+    ->notPath(['source/carbon-fields'])
     ->in([
         __DIR__ . '/src',
     ])

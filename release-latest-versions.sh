@@ -19,15 +19,23 @@ for V in 3.6 3.7; do
     echo "Releasing version ${LATEST} ..."
     if git rev-parse "refs/tags/${LATEST}" >/dev/null 2>&1; then
         echo "Tag exists!"
-        continue
+#        continue
     fi
 
     git status --ignored --short -- source/ | sed -n -e 's#^!! ##p' | xargs --no-run-if-empty -- rm -rf
 
-    # Get new version
     DOWNLOAD_URL=$(echo "${RELEASES}" | jq -r ".[] | select(.tag_name==\"${LATEST}\") | .zipball_url")
     curl -L "${DOWNLOAD_URL}" -o "source/carbon-fields-${LATEST}.zip"
-    unzip -q -d "source/carbon-fields" "source/carbon-fields-${LATEST}.zip"
+
+    unzip -q "source/carbon-fields-${LATEST}.zip" -d "source/carbon-fields-temp"
+
+    # Move all files from the subfolder to the target directory
+    cd "source/carbon-fields-temp"
+    mv htmlburger-carbon-fields-*/* ../carbon-fields/
+
+    # Delete the temporary folder
+    cd ../..
+    rm -rf "source/carbon-fields-temp"
 
     echo "Generating stubs ..."
     bash ./generate.sh
