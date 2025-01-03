@@ -43,8 +43,8 @@
             "@test:phpunit",
             "@test:phpstan"
         ],
-        "test:cs": "phpcs",
-        "test:cs:fix": "phpcbf",
+        "cs": "php-cs-fixer fix --verbose --dry-run",
+        "cs:fix": "php-cs-fixer fix",
         "test:phpstan": "phpstan analyze",
         "test:phpunit": "phpunit",
         "generate": "bash ./generate.sh",

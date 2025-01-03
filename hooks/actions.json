@@ -1,1 +1,123 @@
-{"$schema":"https://raw.githubusercontent.com/0zd0/wordpress-hooks-stub-generator/dev/schema.json","hooks":[{"name":"carbon_fields_register_fields","file":"core/Loader/Loader.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"carbon_fields_fields_registered","file":"core/Loader/Loader.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"media_buttons","file":"core/Field/Rich_Text_Field.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"carbon_fields_field_activated","file":"core/Field/Field.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":1},{"name":"carbon_fields_user_meta_container_saved","file":"core/Container/User_Meta_Container.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":2},{"name":"carbon_fields_container_activated","file":"core/Container/Container.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":1},{"name":"carbon_fields_' . $this->type . '_container_saved","file":"core/Container/Theme_Options_Container.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":2},{"name":"carbon_fields_nav_menu_item_container_saved","file":"core/Container/Nav_Menu_Item_Container.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":1},{"name":"carbon_fields_post_meta_container_saved","file":"core/Container/Post_Meta_Container.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":2},{"name":"carbon_fields_term_meta_container_saved","file":"core/Container/Term_Meta_Container.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":2},{"name":"carbon_fields_loaded","file":"core/Carbon_Fields.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"carbon_fields_print_nav_menu_item_container_fields","file":"core/Walker/Nav_Menu_Item_Edit_Walker.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":5},{"name":"wp_nav_menu_item_custom_fields","file":"core/Walker/Nav_Menu_Item_Edit_Walker.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":5},{"name":"{$container_id}_before_fields","file":"templates/Container/common/options-page.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"{$container_id}_after_fields","file":"templates/Container/common/options-page.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"{$container_id}_before_sidebar","file":"templates/Container/common/options-page.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"{$container_id}_after_sidebar","file":"templates/Container/common/options-page.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0}]}
+{
+    "$schema": "https://raw.githubusercontent.com/0zd0/wordpress-hooks-stub-generator/dev/schema.json",
+    "hooks": [
+        {
+            "name": "carbon_fields_register_fields",
+            "file": "core/Loader/Loader.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 0
+        },
+        {
+            "name": "carbon_fields_fields_registered",
+            "file": "core/Loader/Loader.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 0
+        },
+        {
+            "name": "media_buttons",
+            "file": "core/Field/Rich_Text_Field.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 0
+        },
+        {
+            "name": "carbon_fields_field_activated",
+            "file": "core/Field/Field.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "carbon_fields_user_meta_container_saved",
+            "file": "core/Container/User_Meta_Container.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "carbon_fields_container_activated",
+            "file": "core/Container/Container.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "carbon_fields_nav_menu_item_container_saved",
+            "file": "core/Container/Nav_Menu_Item_Container.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "carbon_fields_post_meta_container_saved",
+            "file": "core/Container/Post_Meta_Container.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "carbon_fields_term_meta_container_saved",
+            "file": "core/Container/Term_Meta_Container.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "carbon_fields_loaded",
+            "file": "core/Carbon_Fields.php",
+            "type": "action",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 0
+        },{"name":"carbon_fields_print_nav_menu_item_container_fields","file":"core/Walker/Nav_Menu_Item_Edit_Walker.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":5},{"name":"wp_nav_menu_item_custom_fields","file":"core/Walker/Nav_Menu_Item_Edit_Walker.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":5},{"name":"{$container_id}_before_fields","file":"templates/Container/common/options-page.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"{$container_id}_after_fields","file":"templates/Container/common/options-page.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"{$container_id}_before_sidebar","file":"templates/Container/common/options-page.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"{$container_id}_after_sidebar","file":"templates/Container/common/options-page.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":0},{"name":"carbon_fields_{$type}_container_saved","file":"core/Container/Theme_Options_Container.php","type":"action","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":2}]}
