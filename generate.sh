@@ -5,7 +5,7 @@
 
 HEADER=$'/**\n * Generated stub declarations for carbon fields.\n * @see https://github.com/htmlburger/carbon-fields\n * @see https://github.com/0zd0/carbon-fields-stubs\n */'
 
-FILE="carbon-fields-stubs.php"
+FILE="carbon-fields-stubs.phpstub"
 DIR=$(dirname "$0")
 
 IGNORE_HOOKS=(
